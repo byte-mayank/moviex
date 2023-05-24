@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./style.scss";
@@ -31,15 +31,15 @@ const HeroBanner = () => {
     <div className="heroBanner">
       {!loading && (
         <div className="backdrop-img">
-          <img src={background} />
+          <Img src={background} />
         </div>
       )}
 
-      <div className="opacityLayer"></div>
+      <div className="opacity-layer"></div>
 
       <ContentWrapper>
         <div className="heroBannerContent">
-          <span className="title">Welcome</span>
+          <span className="title">Welcome.</span>
           <span className="subTitle">
             Millions of movies, TV shows and people to discover. Explore now.
           </span>
