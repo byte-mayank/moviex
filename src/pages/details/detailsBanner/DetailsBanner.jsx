@@ -17,6 +17,8 @@ const DetailsBanner = ({ video, crew }) => {
   const { data, loading } = useFetch(`/${mediaType}/${id}`);
   const { url } = useSelector((state) => state.home);
 
+  const _genres = data?.genres?.map((g) => g.id);
+
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
@@ -46,9 +48,13 @@ const DetailsBanner = ({ video, crew }) => {
                     )}
                   </div>
                   <div className="right">
-                    {`${data.name || data.title} (${dayjs(
-                      data.release_date
-                    ).format("YYYY")})`}
+                    <div className="title">
+                      {`${data.name || data.title} (${dayjs(
+                        data?.release_date
+                      ).format("YYYY")})`}
+                    </div>
+                    <div className="subtitle">{data.tagline}</div>
+                    <Genres data={_genres} />
                   </div>
                 </div>
               </ContentWrapper>
