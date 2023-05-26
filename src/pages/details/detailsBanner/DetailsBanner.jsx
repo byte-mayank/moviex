@@ -45,7 +45,11 @@ const DetailsBanner = ({ video, crew }) => {
                       <Img className="posterImg" src={PosterFallback} />
                     )}
                   </div>
-                  <div className="right"></div>
+                  <div className="right">
+                    {`${data.name || data.title} (${dayjs(
+                      data.release_date
+                    ).format("YYYY")})`}
+                  </div>
                 </div>
               </ContentWrapper>
             </React.Fragment>
