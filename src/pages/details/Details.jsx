@@ -6,12 +6,15 @@ import DetailsBanner from "./detailsBanner/DetailsBanner";
 DetailsBanner;
 
 const Details = () => {
-  // const {mediaType, id} = useParams();
-  // const {data, loading} = useFetch(`/${mediaType}/${id}`)
+  const { mediaType, id } = useParams();
+  const { data, loading } = useFetch(`/${mediaType}/${id}/videos`);
+  const { data: credits, loading: creditsLoading } = useFetch(
+    `/${mediaType}/${id}/credits`
+  );
 
   return (
     <div>
-      <DetailsBanner />
+      <DetailsBanner video={data?.results[0]} crew={credits?.crew} />
     </div>
   );
 };
