@@ -4,16 +4,7 @@ The Moviex App is a web application built using Vite, a fast build tool for mode
 
 ## Deployment Issue
 
-Unfortunately, there seems to be a deployment issue with the app. To resolve this, please follow the steps below:
-
-1. Ensure that you have correctly configured your deployment environment. Check if all necessary dependencies and configurations are in place.
-2. Verify that you have specified the correct build settings in your `package.json` file, particularly in the "scripts" section.
-3. Double-check that all required dependencies and devDependencies are correctly listed in your `package.json` file.
-4. Review any error messages or logs generated during the deployment process. They may provide valuable insights into the cause of the issue.
-5. Consider reaching out to the Vite community or support channels for assistance. They might have encountered similar deployment issues and can offer guidance or solutions.
-6. Make sure your deployment environment meets the requirements specified by Vite. Check for any compatibility issues with your hosting platform or server.
-
-If you are unable to resolve the deployment issue, please provide more specific details about the error or issue you encounter. This will help in troubleshooting and finding a solution.
+Unfortunately, there seems to be a deployment issue with the app. 
 
 ## Prerequisites
 
