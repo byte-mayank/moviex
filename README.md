@@ -31,8 +31,6 @@ npm install
 npm run dev
 ```
 
-4. Once the installation is complete, you can start the app in development mode using the following command:
-
 5. The app should now be running on `http://localhost:3000`. Open your preferred web browser and visit the provided URL.
 
 ## Usage
