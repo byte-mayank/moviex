@@ -53,8 +53,6 @@ Once the Moviex App is running, you can use it as follows:
 3. Navigate back to the main screen and try different genres or sections to discover more content.
 4. Use the provided search functionality to search for specific movies or TV shows by their titles.
 5. Interact with the app's UI components, such as buttons, dropdowns, and pagination, to customize your browsing experience.
-6. Take note of the background changes based on the temperature. It should reflect a cold background for temperatures below 16 degrees Celsius and a hot background for temperatures above 16 degrees Celsius.
-7. Utilize the "Switch to Fahrenheit" button to toggle between displaying temperature in Celsius or Fahrenheit.
 
 ## Technologies Used
 
